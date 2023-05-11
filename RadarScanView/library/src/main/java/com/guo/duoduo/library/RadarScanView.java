@@ -37,9 +37,10 @@ public class RadarScanView extends View
     private Paint mPaintRadar;
     private Matrix matrix;
 
+    private Boolean mScanFlag;
+
     private Handler handler = new Handler();
-    private Runnable run = new Runnable()
-    {
+    private Runnable run = new Runnable() {
         @Override
         public void run()
         {
@@ -47,32 +48,30 @@ public class RadarScanView extends View
             matrix = new Matrix();
             matrix.postRotate(start, centerX, centerY);
             postInvalidate();
-            handler.postDelayed(run, 10);
+            if (mScanFlag) {
+                handler.postDelayed(run, 10);
+            }
         }
     };
 
-    public RadarScanView(Context context)
-    {
+    public RadarScanView(Context context) {
         super(context);
         init(null, context);
     }
 
-    public RadarScanView(Context context, AttributeSet attrs)
-    {
+    public RadarScanView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, context);
     }
 
-    public RadarScanView(Context context, AttributeSet attrs, int defStyleAttr)
-    {
+    public RadarScanView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs, context);
     }
 
     @TargetApi(21)
     public RadarScanView(Context context, AttributeSet attrs, int defStyleAttr,
-            int defStyleRes)
-    {
+            int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(attrs, context);
     }
@@ -105,7 +104,29 @@ public class RadarScanView extends View
         defaultHeight = dip2px(context, DEFAULT_HEIGHT);
 
         matrix = new Matrix();
+        startScan();
+    }
+
+    public void startScan() {
+        mScanFlag = true;
+
         handler.post(run);
+    }
+
+    public void stopScan() {
+        mScanFlag = false;
+    }
+
+    public void toggle() {
+        if (mScanFlag) {
+            stopScan();
+        } else {
+            startScan();
+        }
+    }
+
+    public Boolean getmScanFlag() {
+        return mScanFlag;
     }
 
     private void initPaint()

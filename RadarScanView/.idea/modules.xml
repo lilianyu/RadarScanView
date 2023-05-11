@@ -3,10 +3,22 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RadarScanView.iml" filepath="$PROJECT_DIR$/RadarScanView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/randomtextview/randomtextview.iml" filepath="$PROJECT_DIR$/randomtextview/randomtextview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rippleview/rippleview.iml" filepath="$PROJECT_DIR$/rippleview/rippleview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RadarScanView.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RadarScanView.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RadarScanView.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RadarScanView.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RadarScanView.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RadarScanView.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RadarScanView.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RadarScanView.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/RadarScanView.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/RadarScanView.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/RadarScanView.library.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/RadarScanView.library.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/RadarScanView.library.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/RadarScanView.library.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/RadarScanView.library.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/RadarScanView.library.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/randomtextview/RadarScanView.randomtextview.iml" filepath="$PROJECT_DIR$/.idea/modules/randomtextview/RadarScanView.randomtextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/randomtextview/RadarScanView.randomtextview.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/randomtextview/RadarScanView.randomtextview.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/randomtextview/RadarScanView.randomtextview.main.iml" filepath="$PROJECT_DIR$/.idea/modules/randomtextview/RadarScanView.randomtextview.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/randomtextview/RadarScanView.randomtextview.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/randomtextview/RadarScanView.randomtextview.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rippleview/RadarScanView.rippleview.iml" filepath="$PROJECT_DIR$/.idea/modules/rippleview/RadarScanView.rippleview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rippleview/RadarScanView.rippleview.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/rippleview/RadarScanView.rippleview.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rippleview/RadarScanView.rippleview.main.iml" filepath="$PROJECT_DIR$/.idea/modules/rippleview/RadarScanView.rippleview.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rippleview/RadarScanView.rippleview.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/rippleview/RadarScanView.rippleview.unitTest.iml" />
     </modules>
   </component>
 </project>

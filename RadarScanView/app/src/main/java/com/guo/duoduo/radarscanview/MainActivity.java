@@ -4,16 +4,18 @@ package com.guo.duoduo.radarscanview;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
+import com.guo.duoduo.library.RadarScanView;
 import com.guo.duoduo.randomtextview.RandomTextView;
 
 
-public class MainActivity extends AppCompatActivity
-{
+public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity
 
         final RandomTextView randomTextView = (RandomTextView) findViewById(
             R.id.random_textview);
+
+        final RadarScanView scanView = findViewById(R.id.scan_view);
+        final Button mBtnScan = findViewById(R.id.button_scan);
         randomTextView.setOnRippleViewClickListener(
             new RandomTextView.OnRippleViewClickListener()
             {
@@ -33,6 +38,13 @@ public class MainActivity extends AppCompatActivity
                         new Intent(MainActivity.this, RefreshProgressActivity.class));
                 }
             });
+
+        mBtnScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scanView.toggle();
+            }
+        });
 
         new Handler().postDelayed(new Runnable()
         {
